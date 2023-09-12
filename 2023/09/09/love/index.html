@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: Typora, A Real Man">
-    <meta name="description" content="A Real Man">
+    <meta name="keywords" content="动态爱心, A Real Man">
+    <meta name="description" content="超炫美丽特效">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: Typora | A Real Man</title>
+    <title>动态爱心 | A Real Man</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -38,9 +38,7 @@
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/css/post.css">
-
 
 
 
@@ -439,165 +437,462 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/../images/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">动态爱心</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-<script>
-    
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
-    
-    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
-
-</script>
 
 
-    </div>
-</div>
-
-<main class="content">
+<main class="container content">
 
     
-
-<div id="tags" class="container chip-container">
+    <!-- 文章内容详情 -->
+<div id="artDetail">
     <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Typora/">
+                                <span class="chip bg-color">Typora</span>
+                            </a>
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
+                            </a>
+                        
+                    </div>
+                    
+                </div>
             </div>
-            <div class="tag-chips">
+
+            <div class="post-info">
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-09-09
+                </div>
                 
-                <a href="/tags/Typora/" title="Typora: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="Typora" style="background-color: #F9EBEA;">Typora
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
+
                 
+
                 
-                <a href="/tags/Markdown/" title="Markdown: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Markdown" style="background-color: #F5EEF8;">Markdown
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
+
                 
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>*爱心代码<br>import random<br>from math import sin, cos, pi, log<br>from tkinter import *</p>
+<p>CANVAS_WIDTH = 640<br>CANVAS_HEIGHT = 480<br>CANVAS_CENTER_X = CANVAS_WIDTH / 2<br>CANVAS_CENTER_Y = CANVAS_HEIGHT / 2<br>IMAGE_ENLARGE = 11<br>HEART_COLOR = “#DA8DA7”  # ff2121#DA8DA7#FFC0CB#893198</p>
+<p>def heart_function(t, shrink_ratio: float = IMAGE_ENLARGE):<br>    x = 16 * (sin(t) ** 3)<br>    y = -(13 * cos(t) - 5 * cos(2 * t) - 2 * cos(3 * t) - cos(4 * t))</p>
+<pre><code>x *= shrink_ratio
+y *= shrink_ratio
+
+x += CANVAS_CENTER_X
+y += CANVAS_CENTER_Y
+
+return int(x), int(y)
+</code></pre>
+<p>def scatter_inside(x, y, beta=0.15):<br>    ratio_x = - beta * log(random.random())<br>    ratio_y = - beta * log(random.random())</p>
+<pre><code>dx = ratio_x * (x - CANVAS_CENTER_X)
+dy = ratio_y * (y - CANVAS_CENTER_Y)
+
+return x - dx, y - dy
+</code></pre>
+<p>def shrink(x, y, ratio):<br>    force = -1 / (((x - CANVAS_CENTER_X) ** 2 + (y - CANVAS_CENTER_Y) ** 2) ** 0.6)  # 这个参数…<br>    dx = ratio * force * (x - CANVAS_CENTER_X)<br>    dy = ratio * force * (y - CANVAS_CENTER_Y)<br>    return x - dx, y - dy</p>
+<p>def curve(p):<br>    return 2 * (2 * sin(4 * p)) / (2 * pi)</p>
+<p>class Heart:</p>
+<pre><code>def __init__(self, generate_frame=20):
+    self._points = set()  # 原始爱心坐标集合
+    self._edge_diffusion_points = set()  # 边缘扩散效果点坐标集合
+    self._center_diffusion_points = set()  # 中心扩散效果点坐标集合
+    self.all_points = {}  # 每帧动态点坐标
+    self.build(2000)
+
+    self.random_halo = 1000
+
+    self.generate_frame = generate_frame
+    for frame in range(generate_frame):
+        self.calc(frame)
+
+def build(self, number):
+
+    for _ in range(number):
+        t = random.uniform(0, 2 * pi)
+        x, y = heart_function(t)
+        self._points.add((x, y))
+
+    for _x, _y in list(self._points):
+        for _ in range(3):
+            x, y = scatter_inside(_x, _y, 0.05)
+            self._edge_diffusion_points.add((x, y))
+
+    point_list = list(self._points)
+    for _ in range(4000):
+        x, y = random.choice(point_list)
+        x, y = scatter_inside(x, y, 0.17)
+        self._center_diffusion_points.add((x, y))
+
+@staticmethod
+def calc_position(x, y, ratio):
+
+    force = 1 / (((x - CANVAS_CENTER_X) ** 2 + (y - CANVAS_CENTER_Y) ** 2) ** 0.520)  # 魔法参数
+
+    dx = ratio * force * (x - CANVAS_CENTER_X) + random.randint(-1, 1)
+    dy = ratio * force * (y - CANVAS_CENTER_Y) + random.randint(-1, 1)
+
+    return x - dx, y - dy
+
+def calc(self, generate_frame):
+    ratio = 10 * curve(generate_frame / 10 * pi)  # 圆滑的周期的缩放比例
+
+    halo_radius = int(4 + 6 * (1 + curve(generate_frame / 10 * pi)))
+    halo_number = int(3000 + 4000 * abs(curve(generate_frame / 10 * pi) ** 2))
+
+    all_points = []
+
+    heart_halo_point = set()
+    for _ in range(halo_number):
+        t = random.uniform(0, 2 * pi)
+        x, y = heart_function(t, shrink_ratio=11.6)
+        x, y = shrink(x, y, halo_radius)
+        if (x, y) not in heart_halo_point:
+            heart_halo_point.add((x, y))
+            x += random.randint(-14, 14)
+            y += random.randint(-14, 14)
+            size = random.choice((1, 2, 2))
+            all_points.append((x, y, size))
+
+    for x, y in self._points:
+        x, y = self.calc_position(x, y, ratio)
+        size = random.randint(1, 3)
+        all_points.append((x, y, size))
+
+    for x, y in self._edge_diffusion_points:
+        x, y = self.calc_position(x, y, ratio)
+        size = random.randint(1, 2)
+        all_points.append((x, y, size))
+
+    for x, y in self._center_diffusion_points:
+        x, y = self.calc_position(x, y, ratio)
+        size = random.randint(1, 2)
+        all_points.append((x, y, size))
+
+    self.all_points[generate_frame] = all_points
+
+def render(self, render_canvas, render_frame):
+    for x, y, size in self.all_points[render_frame % self.generate_frame]:
+        render_canvas.create_rectangle(x, y, x + size, y + size, width=0, fill=HEART_COLOR)
+</code></pre>
+<p>def draw(main: Tk, render_canvas: Canvas, render_heart: Heart, render_frame=0):<br>    render_canvas.delete(‘all’)<br>    render_heart.render(render_canvas, render_frame)<br>    main.after(160, draw, main, render_canvas, render_heart, render_frame + 1)</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    root = Tk()  # 一个Tk<br>    canvas = Canvas(root, bg=’black’, height=CANVAS_HEIGHT, width=CANVAS_WIDTH)<br>    canvas.pack()<br>    heart = Heart()<br>    draw(root, canvas, heart)<br>    root.mainloop()</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">stay</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://thirtyandthree.github.io.git/2023/09/09/love/">https://thirtyandthree.github.io.git/2023/09/09/love/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">stay</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Typora/">
+                                    <span class="chip bg-color">Typora</span>
+                                </a>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-    
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="Typora, Markdown" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/09/09/love/">
-                        <div class="card-image tag-image">
-                            
-                            <img src="/../images/1.jpg" class="responsive-img" alt="动态爱心">
-                            
-                            <span class="card-title">动态爱心</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Markdown/" class="post-category">
-                                Markdown
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="Typora, Markdown" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/09/09/first/">
-                        <div class="card-image tag-image">
-                            
-                            <img src="/../images/cat.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Markdown/" class="post-category">
-                                Markdown
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
         </div>
-    </article>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/09/09/first/">
+                    <div class="card-image">
+                        
+                        <img src="/../images/cat.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-09
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/09/08/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            stay
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    
+
 </main>
 
 
